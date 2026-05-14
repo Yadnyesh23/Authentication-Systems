@@ -8,19 +8,19 @@
 - [x] Setup Express server
 - [ ] Setup React application
 - [ ] Setup environment variables
-- [ ] Setup MySQL database connection
-- [ ] Setup folder structure
-- [ ] Setup git repository
-- [ ] Setup .gitignore
+- [x] Setup MySQL database connection
+- [x] Setup folder structure
+- [x] Setup git repository
+- [x] Setup .gitignore
 
 ---
 
 # Database Setup
-- [ ] Create database
-- [ ] Create users table
-- [ ] Add unique constraint on email
-- [ ] Add timestamps to users table
-- [ ] Create schema.sql
+- [x] Create database
+- [x] Create users table
+- [x] Add unique constraint on email
+- [x] Add timestamps to users table
+- [x] Create schema.sql
 - [ ] Create seed.sql
 - [ ] Create queries.sql
 

@@ -1,5 +1,6 @@
-import express from 'express';
-import dotenv from 'dotenv';
+import express from "express";
+import dotenv from "dotenv";
+import pool from "./config/db.js";
 
 dotenv.config();
 
@@ -7,14 +8,21 @@ const app = express();
 
 const PORT = process.env.PORT;
 
-const startServer = async() => {
+const startServer = async () => {
     try {
-        app.listen(PORT, ()=> {
-            console.log(`Server listening on port : http://localhost:${PORT}`)
-        })
+        const connection = await pool.getConnection();
+
+        console.log("MySQL connected successfully.");
+
+        connection.release();
+
+        app.listen(PORT, () => {
+            console.log(`Server running on http://localhost:${PORT}`);
+        });
+
     } catch (error) {
-        console.log("Error :- ", error.message);
+        console.error("Database connection failed:", error.message);
     }
-}
+};
 
 startServer();
