@@ -12,7 +12,11 @@ app.use(express.json());
 
 // Routes
 import healthcheckRoute from "./modules/healthcheck/healthcheck.route.js";
+import registerRoute from './modules/register/register.route.js';
+
+
 app.use("/api/v1", healthcheckRoute);
+app.use("/api/v1/users",registerRoute);
 
 const startServer = async () => {
     let connection;
