@@ -27,19 +27,19 @@
 ---
 
 # Backend Setup
-- [ ] Configure Express app
-- [ ] Setup middleware
-- [ ] Setup JSON parsing
-- [ ] Setup error handling middleware
-- [ ] Setup validation middleware
-- [ ] Setup database connection pool
+- [x] Configure Express app
+- [x] Setup middleware
+- [x] Setup JSON parsing
+- [x] Setup error handling middleware
+- [x] Setup validation middleware
+- [x] Setup database connection pool
 
 ---
 
 # Healthcheck
-- [ ] Create healthcheck route
-- [ ] Verify backend is running
-- [ ] Verify database connection
+- [x] Create healthcheck route
+- [x] Verify backend is running
+- [x] Verify database connection
 
 ---
 
