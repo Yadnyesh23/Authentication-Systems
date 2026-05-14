@@ -13,10 +13,11 @@ app.use(express.json());
 // Routes
 import healthcheckRoute from "./modules/healthcheck/healthcheck.route.js";
 import registerRoute from './modules/register/register.route.js';
-
+import loginRoute from './modules/login/login.route.js'
 
 app.use("/api/v1", healthcheckRoute);
-app.use("/api/v1/users",registerRoute);
+app.use("/api/v1/auth",registerRoute);
+app.use("/api/v1/auth",loginRoute);
 
 const startServer = async () => {
     let connection;
