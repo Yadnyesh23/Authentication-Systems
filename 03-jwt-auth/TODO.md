@@ -13,10 +13,10 @@
 ---
 
 # Database
-- [ ] Create database `jwt_auth`
-- [ ] Create `users` table
-- [ ] Ensure password is stored as hashed value
-- [ ] Add timestamps (created_at, updated_at)
+- [x] Create database `jwt_auth`
+- [x] Create `users` table
+- [x] Ensure password is stored as hashed value
+- [x] Add timestamps (created_at, updated_at)
 
 ---
 
